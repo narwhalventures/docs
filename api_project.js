@@ -3,7 +3,7 @@ define({
   "version": "0.0.1",
   "description": "Documentation for the REST API provided from The Narwhal",
   "title": "Narwhal API",
-  "url": "https://narwhaldocs.theshadow.xyz",
+  "url": "https://narwhalapi.theshadow.xyz",
   "output": "/docs",
   "input": [
     "src"
@@ -19,7 +19,7 @@ define({
   "apidoc": "0.3.0",
   "generator": {
     "name": "apidoc",
-    "time": "2022-01-07T09:18:17.549Z",
+    "time": "2022-01-07T19:19:45.604Z",
     "url": "https://apidocjs.com",
     "version": "0.29.0"
   }
