@@ -120,10 +120,23 @@ define({ "api": [
   },
   {
     "type": "get",
-    "url": "/giveaway/id",
+    "url": "/giveaway/:id",
     "title": "Get a giveaway",
     "name": "Get_a_giveaway",
     "group": "Giveaways",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "id",
+            "description": "<p>ID of the giveaway</p>"
+          }
+        ]
+      }
+    },
     "success": {
       "fields": {
         "Success 200": [
@@ -218,7 +231,7 @@ define({ "api": [
     "groupTitle": "Giveaways",
     "sampleRequest": [
       {
-        "url": "https://narwhalapi.theshadow.xyz/giveaway/id"
+        "url": "https://narwhalapi.theshadow.xyz/giveaway/:id"
       }
     ]
   }
