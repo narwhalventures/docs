@@ -36,70 +36,7 @@
   },
   {
     "type": "get",
-    "url": "/projects/status",
-    "title": "Status",
-    "name": "Status",
-    "group": "General",
-    "success": {
-      "fields": {
-        "Success 200": [
-          {
-            "group": "Success 200",
-            "type": "Object[]",
-            "optional": false,
-            "field": "status",
-            "description": "<p>All the current project statuses</p>"
-          },
-          {
-            "group": "Success 200",
-            "type": "String",
-            "optional": false,
-            "field": "projects.name",
-            "description": "<p>Name of the project</p>"
-          },
-          {
-            "group": "Success 200",
-            "type": "String",
-            "optional": false,
-            "field": "projects.status",
-            "description": "<p>The status of the project</p>"
-          },
-          {
-            "group": "Success 200",
-            "type": "Number",
-            "optional": true,
-            "field": "projects.ping",
-            "description": "<p>Last known ping of the project in milliseconds</p>"
-          },
-          {
-            "group": "Success 200",
-            "type": "String",
-            "optional": false,
-            "field": "fetchedAt",
-            "description": "<p>Date this data was fetched at</p>"
-          }
-        ]
-      },
-      "examples": [
-        {
-          "title": "Success",
-          "content": "\n{\n    status: [\n        {\n            name: 'Demo 1',\n            status: \"Online\",\n            ping: 19\n        },\n        {\n            name: 'Demo 2',\n            status: 'Maintenance',\n        },\n    ],\n    fetchedAt: '2021-09-13T01:12:37.834Z',\n}",
-          "type": "json"
-        }
-      ]
-    },
-    "version": "0.0.0",
-    "filename": "src/routes/giveaway.js",
-    "groupTitle": "General",
-    "sampleRequest": [
-      {
-        "url": "https://narwhalapi.theshadow.xyz/projects/status"
-      }
-    ]
-  },
-  {
-    "type": "get",
-    "url": "/giveaways",
+    "url": "/giveaway",
     "title": "Giveaways",
     "name": "All_Giveaways",
     "group": "Giveaways",
@@ -170,7 +107,7 @@
     "groupTitle": "Giveaways",
     "sampleRequest": [
       {
-        "url": "https://narwhalapi.theshadow.xyz/giveaways"
+        "url": "https://narwhalapi.theshadow.xyz/giveaway"
       }
     ]
   }
