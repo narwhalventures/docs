@@ -234,5 +234,75 @@ define({ "api": [
         "url": "https://narwhalapi.theshadow.xyz/giveaway/:id"
       }
     ]
+  },
+  {
+    "type": "get",
+    "url": "/stats",
+    "title": "Bot Stats",
+    "name": "Bot_Stats",
+    "group": "Stats",
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "number",
+            "optional": false,
+            "field": "guilds",
+            "description": "<p>The current guild count</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "number",
+            "optional": false,
+            "field": "users",
+            "description": "<p>The current user count</p>"
+          }
+        ]
+      }
+    },
+    "version": "0.0.0",
+    "filename": "src/routes/stats.js",
+    "groupTitle": "Stats",
+    "sampleRequest": [
+      {
+        "url": "https://narwhalapi.theshadow.xyz/stats"
+      }
+    ]
+  },
+  {
+    "type": "get",
+    "url": "/status",
+    "title": "Process Status",
+    "name": "Process_Status",
+    "group": "Stats",
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "Object[]",
+            "optional": false,
+            "field": "discord",
+            "description": "<p>The statuses from Discord</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Object[]",
+            "optional": false,
+            "field": "process",
+            "description": "<p>The statuses from the process manager</p>"
+          }
+        ]
+      }
+    },
+    "version": "0.0.0",
+    "filename": "src/routes/stats.js",
+    "groupTitle": "Stats",
+    "sampleRequest": [
+      {
+        "url": "https://narwhalapi.theshadow.xyz/status"
+      }
+    ]
   }
 ] });
